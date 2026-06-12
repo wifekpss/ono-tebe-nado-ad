@@ -1,3 +1,12 @@
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -40,6 +49,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 750px;
+    width: 100%;
 }
 .overlay {
     position: absolute;
@@ -167,10 +177,11 @@
     text-underline-offset: 5px;
 }
 .about {
-    padding: 92px 50px;
+     padding: 92px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 25px;
+    max-width: 100%;
 }
 .about__column_type_logo {
     display: flex;
